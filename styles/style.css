@@ -50,7 +50,7 @@ ol {
 
 .content__list {
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
   scrollbar-width: none;
 }
@@ -82,21 +82,25 @@ ol {
   width: 711px;
   height: 386px;
   position: relative;
-  object-fit: contain;
 }
 
 .result__video {
   width: 100%;
   height: 100%;
+  object-fit:cover;
+  object-position:center;
 }
 
 .content__video-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit:cover;
+  object-position:center;
 }
 
 .content__video-card-description-container {
@@ -134,25 +138,24 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
-  width: 93px;
-  height: 22px;
   display: inline;
   width: fit-content;
 }
 
 .search-form__textfield {
-  font-family: "Fira Sans Condensed";
+  padding: 0;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
   color: #fff;
   opacity: 70%;
   width: 225px;
-  cursor: pointer;
+  cursor: text;
   appearance: none;
   background-color: transparent;
   border: none;
@@ -179,16 +182,16 @@ ol {
   row-gap: 5px;
   border: none;
   max-width: 225px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
 }
 
 .title {
-  width: 260px;
-  height: 210px;
-  font-family: "Oswald";
+  max-width: 260px;
+  height: auto;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -223,16 +226,15 @@ ol {
   outline: 1px solid #fff;
 }
 .content__video-card-title {
-  width: 200px;
-  height: 30px;
-  font-family: "Oswald";
+  max-width: 200px;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -276,7 +278,7 @@ ol {
   cursor: pointer;
   background-color: transparent;
   color: #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21.6px;
